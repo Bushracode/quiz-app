@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Assessment Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="quiz-container">
+        
+        <!-- Start Screen -->
+        <section id="start-screen" class="screen active">
+            <h1 class="title">JavaScript Fundamentals Quiz</h1>
+            <p class="subtitle">Test your knowledge of the DOM, ES6+, and browser APIs.</p>
+            <div class="high-score-display">
+                Current High Score: <span id="display-high-score">0</span>
+            </div>
+            <button id="start-btn" class="btn btn-primary">Start Assessment</button>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <span class="question-tracker">Question <span id="current-q-num">1</span> of <span id="total-q-num">5</span></span>
+                <span class="timer-display">Time: <span id="time-left">60</span>s</span>
+            </div>
+            <h2 id="question-text" class="question-text">Question goes here</h2>
+            <div id="options-container" class="options-grid">
+                <!-- Buttons injected via JS -->
+            </div>
+        </section>
+
+        <!-- End Screen -->
+        <section id="end-screen" class="screen hidden">
+            <h2 class="title">Assessment Complete</h2>
+            <p class="subtitle">Your final score: <span id="final-score">0</span></p>
+            
+            <form id="score-form" class="score-form">
+                <label for="initials" class="form-label">Enter Initials to Save Score:</label>
+                <div class="input-group">
+                    <input type="text" id="initials" class="form-input" maxlength="3" required />
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+            <button id="restart-btn" class="btn btn-secondary mt-2">Try Again</button>
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

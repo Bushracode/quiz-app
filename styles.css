@@ -1,0 +1,205 @@
+:root {
+    --bg-primary: #090d16;
+    --bg-surface: #111827;
+    --bg-surface-hover: #1f2937;
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --brand-primary: #00e5ff;
+    --brand-hover: #00b4d8;
+    --brand-accent: #a855f7;
+    --border-color: #1f2937;
+    --danger: #ef4444;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.quiz-container {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 229, 255, 0.05);
+    width: 100%;
+    max-width: 620px;
+    padding: 2.5rem;
+}
+
+.screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.screen.active {
+    display: flex;
+}
+
+.title {
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #00e5ff 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.high-score-display {
+    background-color: rgba(0, 229, 255, 0.05);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--brand-primary);
+}
+
+.btn {
+    padding: 0.8rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00e5ff 0%, #00b4d8 100%);
+    color: #090d16;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(0, 229, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 229, 255, 0.4);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--bg-surface-hover);
+    border-color: #374151;
+}
+
+.btn-option {
+    background-color: #1a2234;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    text-align: left;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-option:hover {
+    background-color: rgba(0, 229, 255, 0.1);
+    border-color: var(--brand-primary);
+    color: var(--brand-primary);
+}
+
+.quiz-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.timer-display {
+    color: #f59e0b;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+.question-text {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.options-grid {
+    width: 100%;
+}
+
+.score-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 1.5rem 0;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.form-input {
+    flex: 1;
+    padding: 0.75rem;
+    background: #1f2937;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    color: #fff;
+    font-family: inherit;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--brand-primary);
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
