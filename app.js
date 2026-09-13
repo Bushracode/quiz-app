@@ -1,27 +1,27 @@
 const quizData = [
     {
-        question: "What does DOM stand for?",
-        options: ["Document Object Model", "Data Object Model", "Document Oriented Model", "Digital Object Model"],
+        question: "What does the <a> tag represent in HTML?",
+        options: ["A hyperlink", "An image", "A paragraph", "A list item"],
         answer: 0
     },
     {
-        question: "Which keyword is used to declare a block-scoped variable that cannot be reassigned?",
-        options: ["var", "let", "const", "function"],
-        answer: 2
-    },
-    {
-        question: "How do you select an element with the id 'main-content' in vanilla JavaScript?",
-        options: ["document.querySelector('.main-content')", "document.getElementById('main-content')", "document.select('main-content')", "window.getId('main-content')"],
+        question: "Which CSS property changes the text color?",
+        options: ["font-size", "color", "background", "margin"],
         answer: 1
     },
     {
-        question: "Which of the following is not a primitive data type in JavaScript?",
-        options: ["String", "Boolean", "Object", "Undefined"],
-        answer: 2
+        question: "What HTML element is used for a line break?",
+        options: ["<br>", "<hr>", "<lb>", "<break>"],
+        answer: 0
     },
     {
-        question: "What is the purpose of localStorage?",
-        options: ["To store data temporarily for a single session", "To store data persistently across browser sessions", "To manage database queries", "To handle server-side authentication"],
+        question: "Which unit is relative to the font size of the element?",
+        options: ["px", "em", "pt", "cm"],
+        answer: 1
+    },
+    {
+        question: "How do you comment in CSS?",
+        options: ["// comment", "/* comment */", "# comment", "<!-- comment -->"],
         answer: 1
     }
 ];
