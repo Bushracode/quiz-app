@@ -1,26 +1,24 @@
 :root {
-    --bg-primary: #f5f7ff; /* soft lavender */
-    --bg-surface: #e6e8ff; /* light purple surface */
-    --bg-surface-hover: #d1d4ff; /* slightly darker on hover */
-    --text-primary: #2d2d2d; /* dark gray for readability */
-    --text-secondary: #5a5a5a; /* medium gray */
-    --brand-primary: #7c4dff; /* muted purple */
-    --brand-hover: #6a3de8; /* darker on hover */
-    --brand-accent: #b39ddb; /* subtle accent */
-    --border-color: #c5c6d0; /* light border */
-    --danger: #e53935; /* red for errors */
-    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-}
-    --bg-primary: #090d16;
-    --bg-surface: #111827;
-    --bg-surface-hover: #1f2937;
-    --text-primary: #f9fafb;
-    --text-secondary: #9ca3af;
-    --brand-primary: #00e5ff;
-    --brand-hover: #00b4d8;
-    --brand-accent: #a855f7;
-    --border-color: #1f2937;
-    --danger: #ef4444;
+    --bg-primary: #f5f7ff;
+    /* soft lavender */
+    --bg-surface: #e6e8ff;
+    /* light purple surface */
+    --bg-surface-hover: #d1d4ff;
+    /* slightly darker on hover */
+    --text-primary: #2d2d2d;
+    /* dark gray for readability */
+    --text-secondary: #5a5a5a;
+    /* medium gray */
+    --brand-primary: #7c4dff;
+    /* muted purple */
+    --brand-hover: #6a3de8;
+    /* darker on hover */
+    --brand-accent: #b39ddb;
+    /* subtle accent */
+    --border-color: #c5c6d0;
+    /* light border */
+    --danger: #e53935;
+    /* red for errors */
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
