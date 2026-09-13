@@ -119,7 +119,7 @@ body {
 }
 
 .btn-option {
-    background-color: #1a2234;
+    background-color: #e6e8ff; /* light purple background for contrast */
     color: var(--text-primary);
     border: 1px solid var(--border-color);
     text-align: left;
@@ -134,7 +134,7 @@ body {
 }
 
 .btn-option:hover {
-    background-color: rgba(0, 229, 255, 0.1);
+    background-color: rgba(124, 77, 255, 0.15); /* subtle purple hover */
     border-color: var(--brand-primary);
     color: var(--brand-primary);
 }
